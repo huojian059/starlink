@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STARLINK💫</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    #starlink-logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-size: 3vw;
+      font-weight: bold;
+      z-index: 100;
+    }
+
+    #intro-text {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 6vw;
+      font-weight: bold;
+      text-align: center;
+      z-index: 100;
+      opacity: 1;
+      transition: opacity 3s ease-out;
+      white-space: nowrap;
+      max-width: 90%;
+    }
+
+    #ad-text {
+      position: absolute;
+      bottom: -800px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #aaa;
+      font-size: 2vw;
+      text-align: center;
+      width: 80%;
+      z-index: 100;
+      opacity: 0;
+      animation: scroll-up 15s ease-out forwards;
+      animation-delay: 3s;
+      transition: opacity 3s ease-in-out;
+    }
+
+    @keyframes scroll-up {
+      from {
+        bottom: -800px;
+      }
+      to {
+        bottom: 50%;
+      }
+    }
+
+    #order-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 1.5vw 3vw;
+      font-size: 2vw;
+      cursor: pointer;
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    #background-img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: 100%;
+      z-index: -1;
+    }
+
+    @media only screen and (max-width: 320px) {
+      #starlink-logo {
+        font-size: 4vw;
+      }
+      #intro-text {
+        font-size: 7vw;
+      }
+      #ad-text {
+        font-size: 2.5vw;
+      }
+      #order-button {
+        font-size: 2.5vw;
+      }
+    }
+
+    @media only screen and (min-width: 321px) and (max-width: 480px) {
+      #starlink-logo {
+        font-size: 3.5vw;
+      }
+      #intro-text {
+        font-size: 6.5vw;
+      }
+      #ad-text {
+        font-size: 2.2vw;
+      }
+      #order-button {
+        font-size: 2.2vw;
+      }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      #starlink-logo {
+        font-size: 3vw;
+      }
+      #intro-text {
+        font-size: 6vw;
+      }
+      #ad-text {
+        font-size: 2vw;
+      }
+      #order-button {
+        font-size: 2vw;
+      }
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      #starlink-logo {
+        font-size: 2.5vw;
+      }
+      #intro-text {
+        font-size: 5.5vw;
+      }
+      #ad-text {
+        font-size: 1.8vw;
+      }
+      #order-button {
+        font-size: 1.8vw;
+      }
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      #starlink-logo {
+        font-size: 2vw;
+      }
+      #intro-text {
+        font-size: 5vw;
+      }
+      #ad-text {
+        font-size: 1.5vw;
+      }
+      #order-button {
+        font-size: 1.5vw;
+      }
+    }
+
+    @media only screen and (min-width: 1441px) {
+      #starlink-logo {
+        font-size: 1.5vw;
+      }
+      #intro-text {
+        font-size: 4vw;
+      }
+      #ad-text {
+        font-size: 1.2vw;
+      }
+      #order-button {
+        font-size: 1.2vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="starlink-logo">STARLINK</div>
+  <div id="intro-text">HIGH-SPEED INTERNET<br>AROUND THE WORLD</div>
+  <div id="ad-text">
+    🌍⚠️全球紧急通告！⚠️🌍<br>
+    你知道吗？你的网速，可能还停留在原始社会！<br>
+    你以为你连的是互联网？<br>
+    不，你连的是——“限速监狱”！<br>
+    <br>
+    🚀星链降临地球！互联网的终极进化形态——正式开启！<br>
+    它不是路由器，不是基站，不是 5G……<br>
+    它是——💫**“卫星矩阵”**！<br>
+    是马斯克放进太空的上万颗星星，<br>
+    在为你个人！一！人！服务！<br>
+    <br>
+    📡星链一开，全宇宙都听见你在上网！<br>
+    你在山里？海里？天上？地底？<br>
+    只要你还在地球上，星链都能把网甩你脸上！<br>
+    <br>
+    🔥不是连接网络，而是连接星辰大海！<br>
+    你还在办公室断网重启？<br>
+    人家在无人区搞直播，流畅得像插了光纤！<br>
+    <br>
+    😱你还在刷视频卡顿，慢得像坐绿皮火车？<br>
+    有了星链——一秒起飞，直接高铁进站！<br>
+    直播？不卡！办公？不掉！游戏？低延迟得像跟服务器谈恋爱！<br>
+    <br>
+    💀现在不是你选不用星链，是你根本承受不起没有它的后果！<br>
+    <br>
+    📞立刻联系星链顾问【火箭】，<br>
+    专业对接，一站服务，直接让你从地球土著升格为太空公民！<br>
+    <br>
+    记住这句话：<br>
+    今天你犹豫星链，明天星链把你甩下网络文明的列车！
+  </div>
+  <button id="order-button">立即订购</button>
+  <img id="background-img" src="STARLINK.webp" alt="Starlink">
+
+  <audio id="background-music" autoplay loop muted>
+    <source src="AAA.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById('background-music');
+
+    function tryPlayAudio() {
+      audio.muted = false;
+      audio.play().catch((error) => {
+        console.error('音频播放失败:', error);
+        audio.muted = true;
+      });
+    }
+
+    window.onload = function () {
+      tryPlayAudio();
+
+      setTimeout(function () {
+        document.getElementById('intro-text').style.opacity = '0';
+        document.getElementById('ad-text').style.opacity = '1';
+      }, 3000);
+      setTimeout(() => {
+        document.getElementById('ad-text').style.opacity = '0';
+        setTimeout(() => {
+          document.getElementById('order-button').style.display = 'block';
+          document.getElementById('order-button').style.opacity = '1';
+        }, 3000);
+      }, 3000 + 15000);
+    };
+
+    document.addEventListener('click', tryPlayAudio);
+
+    document.getElementById('order-button').addEventListener('click', function () {
+      window.open('https://t.me/huoj8520', '_blank');
+    });
+  </script>
+</body>
+
+</html>    
